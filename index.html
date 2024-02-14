@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
         <meta charset="utf-8">
-        <title>Paper, Rock, Scissor</title>
+        <title>Rock, Paper, Scissors</title>
     </head>
     <body>
-        <h1>Inspect this page to watch your game in the console</h1>
+        <h1 class="title">Rock, Paper, Scissors</h1>
+        <div class="score">
+            <p>Times I've won against the PC: </p>
+            <p id="score">0</p>
+        </div>
+        <div class="score">
+            <p>Times the PC has won against me: </p>
+            <p id="scorePC">0</p>
+        </div>
+        <div class="options">
+            <a href = "#" class="option" id="ROCK">
+                <img src="./img/rock.png" alt="">
+                <p>Rock</p>
+            </a>
+            <a href = "#" class="option" id="PAPER">
+                <img src="./img/paper.png" alt="">
+                <p>Paper</p>
+            </a>
+            <a href = "#" class="option" id="SCISSORS">
+                <img src="./img/scissors.png" alt="">
+                <p>Scissors</p>
+            </a>
+        </div>
+        <div class="score">
+            <h1>Computer Choice: </h1>
+            <h1 id="computerOption"></h1>
+        </div>
+        <div class="result">
+            <p id="result">Choose an option</p>
+        </div>
     </body>
     <script src="script.js"></script>
 </html>
